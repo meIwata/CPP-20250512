@@ -2,7 +2,7 @@
 using namespace std;
 
 //1.自訂函式宣告(因自訂在主函式下方)
-float Temperature(int );
+float Temperature(int value); // 如果main寫在自訂函式前面，需要宣告! 
 //主函式 
 int main()
 {
