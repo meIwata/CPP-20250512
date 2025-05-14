@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n=10;
+    cout << "變數 n 的值=" << n << endl ;
+    return 0;
+}
+好好學習，天天向上
+C++ 標準程式庫提供string class，使用這個類別來建立字串物件
+便於進行高階的字串操作~
+we love learning program design.
+
