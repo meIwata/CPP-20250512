@@ -20,7 +20,10 @@ int main(){ // 主程式
 //		cout<< arr[i] << endl;
 		printf("arr[%d] = %d\t", i, arr[i]);
 		printf("arr2[%d] = %d\t", i, arr2[i]);
-		printf("兩陣列相加 = %d\n", arr[i] + arr2[i]);
+//		printf("兩陣列相加 = %d\n", arr[i] + arr2[i]);
+		
+		int sum = arr[i] + arr2[i];
+		printf("兩陣列相加 = %d\n",	sum);
 	}
 	
 	

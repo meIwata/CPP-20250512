@@ -9,7 +9,7 @@ void ShowAry(int TempAry[]) // ≈„•‹∞}¶C§∏Ø¿
 void Sub2(int TempAry[])   // ∂«ß}©I•s call by address
  {  
 	for(int i=0;i<=2 ;i++) // ∞}¶C§∏Ø¿≠» * 2 
-	  TempAry[i] *=2;
+	  TempAry[i] *=2; // TempAry[i] = TempAry[i] * 2;
  }
 int main()
 {
