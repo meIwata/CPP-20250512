@@ -10,7 +10,7 @@ int main()
     cout << "p=" << p << endl;     //  p=0x22ff44 (p=&n=變數n的位址)
     // 3. 操作 
 	cout << "*p=" << *p << endl;   // *p=10 (*p=*&n=n=10)
-    cout << "*&n=" << *&n << endl; // *&n=10 (*p=*&n=n=10)
+    cout << "*&n=" << *&n << endl; // *&n=10 (*p=*&n=n=10)， *&n也可以寫n 
 	system("pause");
 	return 0;
 }
