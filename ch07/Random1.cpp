@@ -17,7 +17,7 @@ int main()
 		if (ch == '\r')   // 按 Enter  結束
 		{
 			cout << "擲骰子遊戲結束！" << endl;
-			break;
+			break; // 強制中斷迴圈 
 		}
 		else
 		{
