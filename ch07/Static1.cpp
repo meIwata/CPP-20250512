@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
-static int total=0; // 宣告全域靜態變數 total
+int total=0; // 宣告全域變數 total
 void GetData(string name) 
-{
+{	
+	/*有加static int n 的資料會被保留至程式結束。沒有加static，int n 的資料會被清掉*/
 	static int n=0; // 宣告 n 為區域靜態變數 
 	n++;
 	cout << "第 " << n << " 位候選入是:" << name << endl;
