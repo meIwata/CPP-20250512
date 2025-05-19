@@ -14,6 +14,7 @@ void Sub2(int TempAry[])   // 傳址呼叫 call by address
 int main()
 {
 	int Ary[]= {10, 20, 30};
+	cout<<"Ary的記憶體位置: "<< Ary << endl;  // 0x6ffe10
 	cout << "一.Ary陣列傳址:" << endl;
     ShowAry(Ary);  // 10 20 30
     cout << "二.Ary陣列當參數 傳址後" << endl;
