@@ -2,8 +2,10 @@
 using namespace std;
 void ShowAry(int TempAry[]) // 顯示陣列元素
 {
-	for(int i=0;i<=2 ;i++) 
-	  cout << "Ary[" << i << "]=" << TempAry[i] << "\t";
+	for(int i=0;i<=2 ;i++) {
+		cout << "Ary[" << i << "]=" << TempAry[i] << "\t";
+	}
+	cout << "TempAry: " << TempAry << endl; 
   	cout << "\n---------------------------------------------" << endl;
 }
 void Sub2(int TempAry[])   // 傳址呼叫 call by address
