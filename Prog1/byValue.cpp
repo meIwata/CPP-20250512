@@ -3,6 +3,7 @@ using namespace std;
 // ¦Û­q¨ç¦¡«Å§i
 void swap(int x, int y);
 
+// Call by value(­È)
 int main(){
 	int a = 10, b = 20;
 	printf("a: %3d, b: %3d\n", a, b);
