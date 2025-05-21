@@ -14,7 +14,11 @@ printf(" ptr 指標本身的內容%d \n",  ptr); // %x 10進位表示
 
 
 *ptr = 'K';
-printf("ch=%c\n", ch);
+printf("ch=%c\n", ch); // K
+
+*ptr = *ptr + 1;
+ printf("ch=%c\n", ch); // L
+ 
 	system("PAUSE");
 	return 0;
 }
