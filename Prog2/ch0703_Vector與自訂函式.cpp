@@ -15,10 +15,11 @@ int main()
 	//新增元素到vector 
 	v1.push_back(12); v1.push_back(5); v1.push_back(89);
 	v1.push_back(120); v1.push_back(66); v1.push_back(10);
+	v1.push_back(38);
 	
 	vectorAdd(v1); //呼叫自訂函式 
 	//vector排序
-	//sort(v1.begin(), v1.end()); //記得要 include <algorithm>
+	sort(v1.begin(), v1.end()); //記得要 include <algorithm>
 	//顯示vector元素 
 	for(int i=0;i<v1.size();i++)
 	{
