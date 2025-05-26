@@ -4,7 +4,7 @@
 #include <algorithm>  //for vector sort 
 using namespace std;
 //宣告自訂函式 
-void vectorAdd(vector<int> v1); 
+void vectorAdd(vector<int> *v1); // 加了*就是指標變數，call by address 
 
 // 自訂義涵式(排序用) 
 bool compare(int a, int b){
@@ -23,7 +23,7 @@ int main()
 	v1.push_back(120); v1.push_back(66); v1.push_back(10);
 	v1.push_back(38);
 	
-	vectorAdd(v1); //呼叫自訂函式 ，call by value 
+	vectorAdd(&v1); //呼叫自訂函式，call by address 
 	//vector排序
 	
 	// 遞增 
@@ -48,15 +48,15 @@ int main()
 	return 0;
 }
 //自訂函式 
-void vectorAdd(vector<int> v1)
-{	
-	cout << "傳入的vector長度:" << v1.size() << endl; 
-	for(int i=0 ; i<v1.size() ; i++)
+void vectorAdd(vector<int> *v1) // 加了*就是指標變數，call by address
+{
+	cout << "傳入的vector長度:" << v1->size() << endl;
+	for(int i=0 ; i<v1->size() ; i++)
 	{
-		v1.at(i) = v1.at(i) + 10; //測式將vector每一元素+10 
-		printf("%d\t",v1.at(i));
+		v1->at(i) = v1->at(i) + 10; //測式將vector每一元素+10
+		printf("%d\t", v1->at(i)); 
 	}
 	printf("\n");
-	//實作 return vector 作練習 
+	//實作 return vector 作練習
 }
 
