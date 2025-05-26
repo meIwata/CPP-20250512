@@ -6,6 +6,12 @@ using namespace std;
 //宣告自訂函式 
 void vectorAdd(vector<int> v1); 
 
+// 自訂義涵式(排序用) 
+bool compare(int a, int b){
+	return a > b; // 遞增
+//	return a < b; // 遞減 
+}
+
 //主函式(程式起始點)
 int main()
 {
@@ -19,7 +25,19 @@ int main()
 	
 	vectorAdd(v1); //呼叫自訂函式 
 	//vector排序
-	sort(v1.begin(), v1.end()); //記得要 include <algorithm>
+	
+	// 遞增 
+//	sort(v1.begin(), v1.end()); //記得要 include <algorithm>
+//	sort(v1.begin(), v1.end(), less<int>());
+
+	// 反序 
+//	 reverse(v1.begin(), v1.end()); // 38 數回來到 12 
+	
+	// 遞減 
+//	sort(v1.begin(), v1.end(), greater<int>());
+	sort(v1.begin(), v1.end(),compare);
+
+
 	//顯示vector元素 
 	for(int i=0;i<v1.size();i++)
 	{
