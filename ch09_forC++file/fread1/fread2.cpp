@@ -10,11 +10,16 @@ int main()
        cout << "檔案無法開啟!\n";
     else
     {
-        //也可用 while(!file.eof()) 測試是否讀至檔尾
-		while(file.get(ch)) // 字元逐一讀取，讀至檔尾 eof 返迴 false, 也可用 !file.eof() 
-        {
-        	cout << ch;
-		}        
+        //while(!file.eof()) //也可用  測試是否讀至檔尾
+//		while(file.get(ch)) // 字元逐一讀取，讀至檔尾 eof 返迴 false, 也可用 !file.eof() 
+//        {
+//        	cout << ch;
+//		}       
+
+		while(!file.eof()){
+			file.get(ch);
+			cout << ch;
+		} 
         cout << endl;  
         file.close();   //關閉檔案
     }
