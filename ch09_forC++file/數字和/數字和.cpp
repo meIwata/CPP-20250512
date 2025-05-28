@@ -19,8 +19,8 @@ int main()
             {
                 n*=10; // 組成數值 n
                 n = n + (ch - '0'); //ch-'0',字元-'0' = 數值，'0' ascii is 48 
-                //printf("n=%d\n",n); //*
-        		//system("pause");  //*
+//                printf("n=%d\n",n); 
+//        		system("pause");   
             }
             //讀取到213為例 n = n + (ch - '0')
 			//2  = 0 + ('2'-'0') 
