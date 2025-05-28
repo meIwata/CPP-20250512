@@ -11,7 +11,7 @@ int main()
 	//若sample01.txt不存在，會建立此檔案，
     //執行寫入動作並將資料附加在檔案結尾
 
-	file.open("sample01.txt", ios::out | ios::app); 
+	file.open("sample01.txt", ios::out | ios::app); //加上 ios::app，在原本的檔案內容裡面在既需添加資訊 
 	
 	if(file.fail())
        cout << "檔案無法開啟!\n";
